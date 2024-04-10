@@ -163,8 +163,8 @@ const Contact = () => {
               <div className="fields">
                 <div className="chantha_tm_button" data-position="left">
                   <a
-                    href="/img/portfolio/YIN_CHANTHA.pdf"
-                    download="YIN_CHANTHA.pdf"
+                    href="/img/portfolio/YIN_CHANTHA_CV.pdf"
+                    download="YIN_CHANTHA_CV.pdf"
                   >
                     Download My CV
                   </a>
