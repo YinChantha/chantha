@@ -9,22 +9,23 @@ const News = () => {
     img: null,
     title: "",
     date: "",
+    content: "",
   });
-  const onOpenModal = (img, title, date) => {
+  const onOpenModal = (img, title, date, content) => {
     setOpen(true);
-    setModalValue({ img, title, date });
+    setModalValue({ img, title, date, content });
   };
   const onCloseModal = () => {
     setOpen(false);
-    setModalValue({ img: null, title: "", date: "" });
+    setModalValue({ img: null, title: "", date: "", content: "" });
   };
 
   return (
     <Fragment>
-      <div className="kura_tm_section" id="news">
-        <div className="kura_tm_news">
+      <div className="chantha_tm_section" id="news">
+        <div className="chantha_tm_news">
           <div className="container">
-            <div className="kura_tm_main_title">
+            <div className="chantha_tm_main_title">
               <span>News</span>
               <h3>Latest News</h3>
             </div>
@@ -39,7 +40,8 @@ const News = () => {
                           <div
                             className="main"
                             style={{
-                              backgroundImage: "url(/img/news/1.jpg)",
+                              backgroundImage:
+                                "url(/img/news/immigration_po.png)",
                             }}
                           ></div>
                         </div>
@@ -50,51 +52,22 @@ const News = () => {
                           alt=""
                         />
                         <div className="details">
-                          <span>September 02, 2021</span>
-                          <h3>VS Code Gets New JavaScript Debugger</h3>
+                          <span>Nuxtjs, Tailwind, Nodejs, Docker</span>
+                          <h3>Tools: Gitlab, ZOHO, Vscode</h3>
                         </div>
                         <a
-                          className="kura_tm_full_link"
+                          className="chantha_tm_full_link"
                           onClick={() =>
                             onOpenModal(
-                              `img/news/1.jpg`,
-                              "VS Code Gets New JavaScript Debugger",
-                              "September 02, 2021"
+                              `img/news/immigration_ho.png`,
+                              "Web application",
+                              "2023-November-01 - Present",
+                              `<div>Immigration Lamonde is an immigration service for employers that they are having project to create a plateform
+                              collaboration with the Ministry of CANADA that provide the plateform between company and employee to work as the 
+                              immigration people at CANADA</div>`
                             )
                           }
                         ></a>
-                        <div className="news_hidden_details">
-                          <div className="news_popup_informations">
-                            <div className="text">
-                              <p>
-                                Kura is a leading web design agency with an
-                                award-winning design team that creates
-                                innovative, effective websites that capture your
-                                brand, improve your conversion rates, and
-                                maximize your revenue to help grow your business
-                                and achieve your goals.
-                              </p>
-                              <p>
-                                In today’s digital world, your website is the
-                                first interaction consumers have with your
-                                business. That's why almost 95 percent of a
-                                user’s first impression relates to web design.
-                                It’s also why web design services can have an
-                                immense impact on your company’s bottom line.
-                              </p>
-                              <p>
-                                That’s why more companies are not only
-                                reevaluating their website’s design but also
-                                partnering with Kura, the web design agency
-                                that’s driven more than $2.4 billion in revenue
-                                for its clients. With over 50 web design awards
-                                under our belt, we're confident we can design a
-                                custom website that drives sales for your unique
-                                business.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide className="slick-slide">
@@ -104,7 +77,7 @@ const News = () => {
                           <div
                             className="main"
                             style={{
-                              backgroundImage: "url(/img/news/2.jpg)",
+                              backgroundImage: "url(/img/news/scm_po.png)",
                             }}
                           ></div>
                         </div>
@@ -115,51 +88,23 @@ const News = () => {
                           alt=""
                         />
                         <div className="details">
-                          <span>August 17, 2021</span>
-                          <h3>Javalin Framework for Kotlin and Java Updated</h3>
+                          <span>Angularjs, PHP, SQLserver</span>
+                          <h3>Tools: Gitlab, Trello</h3>
                         </div>
                         <a
-                          className="kura_tm_full_link"
+                          className="chantha_tm_full_link"
                           onClick={() =>
                             onOpenModal(
-                              `img/news/2.jpg`,
-                              "Javalin Framework for Kotlin and Java Updated",
-                              "August 17, 2021"
+                              `img/news/scm_ho.png`,
+                              "Web application",
+                              "2023-Nov-01 - Present",
+                              `<div>Stock Control Management is the system that is used for record all
+                              the process of orders such as inventory order, delivery orders,
+                              trucking reports, trucking management and all the data in Goodhill with all branches and
+                              divisions in Cambodia.</div>`
                             )
                           }
                         ></a>
-                        <div className="news_hidden_details">
-                          <div className="news_popup_informations">
-                            <div className="text">
-                              <p>
-                                Kura is a leading web design agency with an
-                                award-winning design team that creates
-                                innovative, effective websites that capture your
-                                brand, improve your conversion rates, and
-                                maximize your revenue to help grow your business
-                                and achieve your goals.
-                              </p>
-                              <p>
-                                In today’s digital world, your website is the
-                                first interaction consumers have with your
-                                business. That's why almost 95 percent of a
-                                user’s first impression relates to web design.
-                                It’s also why web design services can have an
-                                immense impact on your company’s bottom line.
-                              </p>
-                              <p>
-                                That’s why more companies are not only
-                                reevaluating their website’s design but also
-                                partnering with Kura, the web design agency
-                                that’s driven more than $2.4 billion in revenue
-                                for its clients. With over 50 web design awards
-                                under our belt, we're confident we can design a
-                                custom website that drives sales for your unique
-                                business.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide className="slick-slide">
@@ -169,7 +114,8 @@ const News = () => {
                           <div
                             className="main"
                             style={{
-                              backgroundImage: "url(/img/news/3.jpg)",
+                              backgroundImage:
+                                "url(/img/news/proadvisor_po.png)",
                             }}
                           ></div>
                         </div>
@@ -180,51 +126,26 @@ const News = () => {
                           alt=""
                         />
                         <div className="details">
-                          <span>July 05, 2021</span>
-                          <h3>JavaScript Dominated Open Source in 2021</h3>
+                          <span>
+                            Nextjs, Tailwind, Docker, Springboot, Figma
+                          </span>
+                          <h3>Tools: Github, Vscode</h3>
                         </div>
                         <a
-                          className="kura_tm_full_link"
+                          className="chantha_tm_full_link"
                           onClick={() =>
                             onOpenModal(
-                              `img/news/3.jpg`,
-                              "JavaScript Dominated Open Source in 2021",
-                              "July 05, 2021"
+                              `img/news/proadvisor_ho.png`,
+                              "Web application",
+                              "2023-May-19 - 2023-July-21",
+                              `<div>Proadvisor is a platform to provide knowledge to users that they can
+                              finding the best option regarding comparison loans, foxed deposits,
+                              and saving money based on all banks in Cambodia
+                              <a href="https://github.com/YinChantha/proadviser_api" target="_blank">Github</a>.
+                              </div>`
                             )
                           }
                         ></a>
-                        <div className="news_hidden_details">
-                          <div className="news_popup_informations">
-                            <div className="text">
-                              <p>
-                                Kura is a leading web design agency with an
-                                award-winning design team that creates
-                                innovative, effective websites that capture your
-                                brand, improve your conversion rates, and
-                                maximize your revenue to help grow your business
-                                and achieve your goals.
-                              </p>
-                              <p>
-                                In today’s digital world, your website is the
-                                first interaction consumers have with your
-                                business. That's why almost 95 percent of a
-                                user’s first impression relates to web design.
-                                It’s also why web design services can have an
-                                immense impact on your company’s bottom line.
-                              </p>
-                              <p>
-                                That’s why more companies are not only
-                                reevaluating their website’s design but also
-                                partnering with Kura, the web design agency
-                                that’s driven more than $2.4 billion in revenue
-                                for its clients. With over 50 web design awards
-                                under our belt, we're confident we can design a
-                                custom website that drives sales for your unique
-                                business.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide className="slick-slide">
@@ -234,7 +155,7 @@ const News = () => {
                           <div
                             className="main"
                             style={{
-                              backgroundImage: "url(/img/news/4.jpg)",
+                              backgroundImage: "url(/img/news/web3_po.png)",
                             }}
                           ></div>
                         </div>
@@ -245,57 +166,185 @@ const News = () => {
                           alt=""
                         />
                         <div className="details">
-                          <span>April 22, 2021</span>
-                          <h3>Perfecto Tests Progressive Web Apps</h3>
+                          <span>
+                            Reactjs, MaterailUI, Nodejs, Solidity, Docker, Figma
+                          </span>
+                          <h3>Tools: Github, Vscode</h3>
                         </div>
                         <a
-                          className="kura_tm_full_link"
+                          className="chantha_tm_full_link"
                           onClick={() =>
                             onOpenModal(
-                              `img/news/4.jpg`,
-                              "Perfecto Tests Progressive Web Apps",
-                              "April 22, 2021"
+                              `img/news/web3_ho.png`,
+                              "Web application",
+                              "2022-April-21 - 2023-July-18",
+                              `<div>Web3 is the marketplace plateform that allow users to buy and sale the trading
+                               bot source code using meta mask wallet 
+                               <a href="https://github.com/YinChantha/Web3-Tradingbot-Frontend" target="_blank">Github</a>
+                               </div>`
                             )
                           }
                         ></a>
-                        <div className="news_hidden_details">
-                          <div className="news_popup_informations">
-                            <div className="text">
-                              <p>
-                                Kura is a leading web design agency with an
-                                award-winning design team that creates
-                                innovative, effective websites that capture your
-                                brand, improve your conversion rates, and
-                                maximize your revenue to help grow your business
-                                and achieve your goals.
-                              </p>
-                              <p>
-                                In today’s digital world, your website is the
-                                first interaction consumers have with your
-                                business. That's why almost 95 percent of a
-                                user’s first impression relates to web design.
-                                It’s also why web design services can have an
-                                immense impact on your company’s bottom line.
-                              </p>
-                              <p>
-                                That’s why more companies are not only
-                                reevaluating their website’s design but also
-                                partnering with Kura, the web design agency
-                                that’s driven more than $2.4 billion in revenue
-                                for its clients. With over 50 web design awards
-                                under our belt, we're confident we can design a
-                                custom website that drives sales for your unique
-                                business.
-                              </p>
-                            </div>
-                          </div>
+                      </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="slick-slide">
+                      <div className="list_inner">
+                        <div className="image">
+                          <img src="/img/portfolio/410-460.jpg" alt="" />
+                          <div
+                            className="main"
+                            style={{
+                              backgroundImage: "url(/img/news/sms_po.png)",
+                            }}
+                          ></div>
                         </div>
+                        <div className="overlay"></div>
+                        <img
+                          className="svg"
+                          src="/img/svg/right-arrow.svg"
+                          alt=""
+                        />
+                        <div className="details">
+                          <span>Electron, React, Tailwind, Figma</span>
+                          <h3>Tools: Github, Vscode</h3>
+                        </div>
+                        <a
+                          className="chantha_tm_full_link"
+                          onClick={() =>
+                            onOpenModal(
+                              `img/news/sms_po.png`,
+                              "Desktop application",
+                              "2022-November- 11 - 2023-January-20",
+                              `<div>School Management System is the desktop application to mange students and
+                              teachers such as attendace student, salary teacher, schedule teacher as well as
+                              schedule student <a href="https://github.com/incubation-center/Electron-DesktopApp---Group7" target="_blank">Github</a>
+                              </div>`
+                            )
+                          }
+                        ></a>
+                      </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="slick-slide">
+                      <div className="list_inner">
+                        <div className="image">
+                          <img src="/img/portfolio/410-460.jpg" alt="" />
+                          <div
+                            className="main"
+                            style={{
+                              backgroundImage:
+                                "url(/img/news/engineernest_po.png)",
+                            }}
+                          ></div>
+                        </div>
+                        <div className="overlay"></div>
+                        <img
+                          className="svg"
+                          src="/img/svg/right-arrow.svg"
+                          alt=""
+                        />
+                        <div className="details">
+                          <span>React, Vite, Tailwind, Figma</span>
+                          <h3>Tools: Github, Vscode</h3>
+                        </div>
+                        <a
+                          className="chantha_tm_full_link"
+                          onClick={() =>
+                            onOpenModal(
+                              `img/news/engineernest_ho.png`,
+                              "Landing Page",
+                              "2023-July-25 - 2023-August-25",
+                              `<div>EngineerNest is the system aim to provide a plateform
+                              for the developer and the start-up in order to communicate well to collaboration <a href="https://engineer-nest.vercel.app/" target="_blank">Demo</a>
+                              and <a href="https://github.com/YinChantha/Engineer-Nest" target="_blank">Github</a>
+                              </div>`
+                            )
+                          }
+                        ></a>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="slick-slide">
+                      <div className="list_inner">
+                        <div className="image">
+                          <img src="/img/portfolio/410-460.jpg" alt="" />
+                          <div
+                            className="main"
+                            style={{
+                              backgroundImage: "url(/img/news/bitroom_po.png)",
+                            }}
+                          ></div>
+                        </div>
+                        <div className="overlay"></div>
+                        <img
+                          className="svg"
+                          src="/img/svg/right-arrow.svg"
+                          alt=""
+                        />
+                        <div className="details">
+                          <span>Boostrap</span>
+                          <h3>Tools: Github, Vscode</h3>
+                        </div>
+                        <a
+                          className="chantha_tm_full_link"
+                          onClick={() =>
+                            onOpenModal(
+                              `img/news/bitroom_po.png`,
+                              "Landing Page",
+                              "2020-December-01 - 2021-Febuary-10",
+                              `<div>Bitroom is a Virtual Company or a Start Up Under Kiritom Institute of Technology
+                              to provides service to the owner of the coffee shop with the interior design
+                              <a href="https://bitroom.netlify.app/" target="_blank">Demo</a>
+                              and <a href="https://github.com/YinChantha/BITroom" target="_blank">Github</a>
+                              </div>`
+                            )
+                          }
+                        ></a>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="slick-slide">
+                      <div className="list_inner">
+                        <div className="image">
+                          <img src="/img/portfolio/410-460.jpg" alt="" />
+                          <div
+                            className="main"
+                            style={{
+                              backgroundImage:
+                                "url(/img/news/smart_shop_po.png)",
+                            }}
+                          ></div>
+                        </div>
+                        <div className="overlay"></div>
+                        <img
+                          className="svg"
+                          src="/img/svg/right-arrow.svg"
+                          alt=""
+                        />
+                        <div className="details">
+                          <span>Flutter, Provider State Management</span>
+                          <h3>Tools: Github, Vscode</h3>
+                        </div>
+                        <a
+                          className="chantha_tm_full_link"
+                          onClick={() =>
+                            onOpenModal(
+                              `img/news/smart_shop_ho.png`,
+                              "Mobile Application",
+                              "2023-August-21 - 2023-October-20",
+                              `<div>
+                              <div>
+                                Smartshop is an ecommerce with a mobile app project that build for my personal learning for
+                                online shopping with a beautiful user interface <a href="https://github.com/YinChantha/smartshop" target="_blank">Github</a>
+                              </div>`
+                            )
+                          }
+                        ></a>
                       </div>
                     </SwiperSlide>
                   </Swiper>
                 </div>
 
-                <div className="kura_tm_swiper_progress fill">
+                <div className="chantha_tm_swiper_progress fill">
                   <div className="my_pagination_in"></div>
                   <div className="my_navigation">
                     <ul>
@@ -331,6 +380,7 @@ const News = () => {
         img={modalValue.img}
         title={modalValue.title}
         date={modalValue.date}
+        content={modalValue.content}
       />
     </Fragment>
   );

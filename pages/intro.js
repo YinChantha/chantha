@@ -20,11 +20,11 @@ const Intro = () => {
     <Fragment>
       <PageHead page="Intro" />
       <div
-        className="kura_tm_all_wrap"
+        className="chantha_tm_all_wrap"
         data-magic-cursor="show"
         data-color="orange"
       >
-        <div className="kura_tm_intro">
+        <div className="chantha_tm_intro">
           <div className="short_info">
             <img src="img/logo/dark.png" alt="alt" />
             <h3>Personal Portfolio Nextjs Template</h3>

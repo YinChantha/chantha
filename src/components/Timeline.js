@@ -2,10 +2,10 @@ import React from "react";
 
 const Timeline = () => {
   return (
-    <div className="kura_tm_section" id="timeline">
-      <div className="kura_tm_timeline">
+    <div className="chantha_tm_section" id="timeline">
+      <div className="chantha_tm_timeline">
         <div className="container">
-          <div className="kura_tm_main_title">
+          <div className="chantha_tm_main_title">
             <span>Timeline</span>
             <h3>Working Period</h3>
           </div>
@@ -13,13 +13,16 @@ const Timeline = () => {
             <ul>
               <li className="wow fadeInUp" data-wow-duration=".7s">
                 <div className="list_inner">
-                  <span>April, 2019 - Today</span>
+                  <span>2023-November-01 - Present</span>
                 </div>
                 <div className="list_inner">
-                  <span>Head Designer &amp; Co-founder</span>
+                  <span>Fullstack Developer</span>
                 </div>
                 <div className="list_inner">
-                  <span>Alan Klein Design, London</span>
+                  <span>
+                    Solution Immigration | Freelance Project, Immigration
+                    Lamonde | CANADA
+                  </span>
                 </div>
               </li>
               <li
@@ -31,10 +34,10 @@ const Timeline = () => {
                   <span>September, 2018 - April, 2019</span>
                 </div>
                 <div className="list_inner">
-                  <span>Creative Director &amp; Senior Designer</span>
+                  <span>Web Developper &amp; Designer</span>
                 </div>
                 <div className="list_inner">
-                  <span>Raxuna Poc, New York</span>
+                  <span>Stock Control Management ,Goodhill | Phnom Penh</span>
                 </div>
               </li>
               <li
@@ -43,13 +46,18 @@ const Timeline = () => {
                 data-wow-delay=".4s"
               >
                 <div className="list_inner">
-                  <span>October, 2015 - September, 2018</span>
+                  <span>2023-August-04 - 2023-September-31</span>
                 </div>
                 <div className="list_inner">
-                  <span>Head Designer</span>
+                  <span>
+                    Team Lead, Frontend Developer, UX &amp; UI Designer
+                  </span>
                 </div>
                 <div className="list_inner">
-                  <span>Arimana Co. Ltd, Amsterdam</span>
+                  <span>
+                    TUKDAK | Internship Project at Kirirom Institute Of
+                    technology
+                  </span>
                 </div>
               </li>
               <li
@@ -58,13 +66,18 @@ const Timeline = () => {
                 data-wow-delay=".6s"
               >
                 <div className="list_inner">
-                  <span>July, 2012 - October, 2015</span>
+                  <span>2022-November - 11 - 2023-January-20</span>
                 </div>
                 <div className="list_inner">
-                  <span>Senior UX &amp; UI Designer</span>
+                  <span>
+                    Team Lead, Frontend Developer, UX &amp; UI Designer
+                  </span>
                 </div>
                 <div className="list_inner">
-                  <span>Baxdoro Design, London</span>
+                  <span>
+                    School Management System | Internship Project at Kirirom
+                    Institute Of technology
+                  </span>
                 </div>
               </li>
               <li
@@ -73,13 +86,15 @@ const Timeline = () => {
                 data-wow-delay=".8s"
               >
                 <div className="list_inner">
-                  <span>March, 2010 - July, 2012</span>
+                  <span>2022-April-21 - 2023-July-18</span>
                 </div>
                 <div className="list_inner">
-                  <span>Junior UX Designer</span>
+                  <span>Junior UX Designer &amp; Frontend Developer </span>
                 </div>
                 <div className="list_inner">
-                  <span>Simono Design Group, London</span>
+                  <span>
+                    Web3 | Internship Project at Kirirom Institute Of technology
+                  </span>
                 </div>
               </li>
             </ul>

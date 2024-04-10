@@ -18,7 +18,7 @@ const Index = () => {
     <Fragment>
       <PageHead page="Home" />
       <div id="opened">
-        <div className="kura_tm_all_wrap" data-color="orange">
+        <div className="chantha_tm_all_wrap" data-color="orange">
           <Settings />
           <Header />
           <Home />

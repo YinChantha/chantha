@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { HomeModal } from "./ContentModal";
 
 const Home = () => {
@@ -6,23 +6,82 @@ const Home = () => {
   const [modalValue, setModalValue] = useState({
     img: null,
     title: "",
+    content: "",
   });
-  const onOpenModal = (img, title) => {
-    setOpen(true);
-    setModalValue({ img, title });
+
+  const content = {
+    WebDevelopment: `
+    <p>
+      I am a Frontend Web developer with a
+      design that creates innovative, effective websites that
+      capture your brand, improve your conversion rates, and
+      maximize your revenue to help grow your business and achieve
+      your goals.
+    </p>
+    <p>
+      In today’s digital world, your website is the first
+      interaction consumers have with your business. That's why
+      almost percent of the user’s first impression relates to
+      web design which show the interaction to what is that’s business.
+    </p>
+    <p>
+      That’s why more companies are not only reevaluating their
+      website’s design but also partnering with Frontend Developer,I am confident that I can design a custom
+      website that help growth for your unique business.
+    </p>
+    `,
+    DigitalMarketing: `
+      <p>
+        As a digital marketer at KIRIROM Institute of Technology and Vkirirom Pine Resort, my role was to enhance the resort's visibility and reputation,
+        positioning it as a premier destination in Asia and around the world to atracting peoples. 
+      </p>
+      <p>
+        In digital marketing team i serve with digital marketing strategy's essential for businesses looking, By shooting 
+        the createtivity video, Graphic photo and edit video to promote on the facebook page.
+      </p>
+      <p>
+        My efforts in digital marketing were guided by a thorough understanding of the target audience and market trends.
+        My team's continuously monitored the performance of our digital campaigns, analyzing metrics such as engagement rates, reach, and conversion rates. 
+        Based on these insights, We refined our strategies to optimize results and achieve our business objectives.
+      </p>
+      Access my Google Drive folder <a href="https://drive.google.com/drive/folders/1jUZZN0ORbMr2q5wjM0wJRBM0MiBNmtpP" target="_blank">here</a>.
+    `,
+    GraphicDesign: `
+      <p>
+        In addition to its role in branding and user experience, graphic design also contributes to the effectiveness of marketing and advertising efforts.
+        Whether it's designing eye-catching advertisements, creating compelling visual content for social media campaigns, or developing impactful print materials, 
+        graphic designers are instrumental in bringing marketing strategies by combining creativity with strategic thinking,
+        help businesses communicate their messages effectively and stand out in a crowded marketplace.
+      </p>
+      <p>
+        I am a graphic designer by served to KIRIROM Institute of Technology and Vkirirom Pine Resort
+        to grow thier business as well as my personal skill grow
+      </p>
+    `,
   };
+
+  const onOpenModal = (img, title, key) => {
+    setOpen(true);
+    setModalValue({
+      img: img,
+      title: title,
+      content: content[key],
+    });
+  };
+
   const onCloseModal = () => {
     setOpen(false);
-    setModalValue({ img: null, title: "" });
+    setModalValue({ img: null, title: "", content: "" });
   };
+
   return (
-    <div className="kura_tm_section" id="home">
-      <div className="kura_tm_hero">
+    <div className="chantha_tm_section" id="home">
+      <div className="chantha_tm_hero">
         <div className="container">
           <div className="content">
             <div className="left">
-              <span className="name">Bernard Smith</span>
-              <h3 className="job">Creative Designer based in Japan</h3>
+              <span className="name">Yin Chantha</span>
+              <h3 className="job">Designer and Frontend Developer</h3>
               <div className="services">
                 <ul>
                   <li>
@@ -30,12 +89,12 @@ const Home = () => {
                       href="#"
                       onClick={() =>
                         onOpenModal(
-                          "/img/service/1.jpg",
-                          "Creative Designer based in Japan"
+                          "/img/service/Webdevelopment.jpg",
+                          "WebDevelopment",
+                          "WebDevelopment"
                         )
                       }
                     >
-                      <img className="image" src="/img/service/1.jpg" alt="" />
                       <span>Web Development</span>
                       <img
                         className="svg"
@@ -48,10 +107,13 @@ const Home = () => {
                     <a
                       href="#"
                       onClick={() =>
-                        onOpenModal("/img/service/2.jpg", "Digital Marketing")
+                        onOpenModal(
+                          "/img/service/digitalmarketing.jpg",
+                          "Digital Marketing",
+                          "DigitalMarketing"
+                        )
                       }
                     >
-                      <img className="image" src="/img/service/2.jpg" alt="" />
                       <span>Digital Marketing</span>
                       <img
                         className="svg"
@@ -64,10 +126,13 @@ const Home = () => {
                     <a
                       href="#"
                       onClick={() =>
-                        onOpenModal("/img/service/1.jpg", "Graphic Design")
+                        onOpenModal(
+                          "/img/service/graphicdesign.jpg",
+                          "Graphic Design",
+                          "GraphicDesign"
+                        )
                       }
                     >
-                      <img className="image" src="/img/service/3.jpg" alt="" />
                       <span>Graphic Design</span>
                       <img
                         className="svg"
@@ -82,21 +147,11 @@ const Home = () => {
                 <ul>
                   <li>
                     <div className="list_inner">
-                      <h3>10+</h3>
+                      <h3>3+</h3>
                       <span>
                         Years of
                         <br />
                         Experience
-                      </span>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="list_inner">
-                      <h3>3K+</h3>
-                      <span>
-                        Happy
-                        <br />
-                        Customers
                       </span>
                     </div>
                   </li>
@@ -108,7 +163,7 @@ const Home = () => {
                 <img src="/img/thumbs/3-4.jpg" alt="" />
                 <div
                   className="main"
-                  style={{ backgroundImage: "url(img/hero/1.jpg)" }}
+                  style={{ backgroundImage: "url(img/hero/chantha.jpg)" }}
                 ></div>
                 <div className="shape"></div>
               </div>
@@ -126,6 +181,7 @@ const Home = () => {
         onCloseModal={() => onCloseModal()}
         img={modalValue.img}
         title={modalValue.title}
+        content={modalValue.content}
       />
     </div>
   );

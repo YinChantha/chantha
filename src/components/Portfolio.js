@@ -1,68 +1,50 @@
 import React, { Fragment, useState } from "react";
-// import LightBox from "react-awesome-lightbox";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { portfolioSlider } from "../swiperSliderProps";
 
 const IMAGES = [
   {
-    src: "/img/portfolio/1.jpg",
-    thumbnail: "/img/portfolio/1.jpg",
-    title: "Magic Art",
-    sub: "Image",
+    src: "/img/portfolio/picsovannara.jpg",
+    thumbnail: "/img/portfolio/picsovannara.jpg",
   },
   {
-    src: "/img/portfolio/2.jpg",
-    thumbnail: "/img/portfolio/2.jpg",
-    title: "Bona Green",
-    sub: "Image",
+    src: "/img/portfolio/Song_Sokhavuthi.jpg",
+    thumbnail: "/img/portfolio/Song_Sokhavuthi.jpg"
   },
 
   {
-    src: "/img/portfolio/3.jpg",
-    thumbnail: "/img/portfolio/3.jpg",
-    title: "Leo Dandora",
-    sub: "Image",
+    src: "/img/portfolio/Ley_Kimteng.jpg",
+    thumbnail: "/img/portfolio/Ley_Kimteng.jpg"
   },
   {
-    src: "/img/portfolio/4.jpg",
-    thumbnail: "/img/portfolio/4.jpg",
-    title: "Folio Grasia",
-    sub: "Image",
+    src: "/img/portfolio/poster_majors.jpg",
+    thumbnail: "/img/portfolio/poster_majors.jpg"
   },
   {
-    src: "/img/portfolio/5.jpg",
-    thumbnail: "/img/portfolio/5.jpg",
-    title: "Viva Mercury",
-    sub: "Image",
+    src: "/img/portfolio/intershiptime.jpg",
+    thumbnail: "/img/portfolio/intershiptime.jpg"
   },
   {
-    src: "/img/portfolio/6.jpg",
-    thumbnail: "/img/portfolio/6.jpg",
-    title: "Santa Onera",
-    sub: "Image",
+    src: "/img/portfolio/Elonmask.jpg",
+    thumbnail: "/img/portfolio/Elonmask.jpg"
+  },
+  {
+    src: "/img/portfolio/ksi_copy.jpg",
+    thumbnail: "/img/portfolio/ksi_copy.jpg"
   },
 ];
 
 const Portfolio = () => {
   const [showLight, setShowLight] = useState(null);
 
-  // const showLightBox = (index) => {
-  //   setShowLight({
-  //     startIndex: index,
-  //   });
-  // };
-
-  // const hideLightBox = () => {
-  //   setShowLight(null);
-  // };
   return (
     <Fragment>
-      <div className="kura_tm_section" id="portfolio">
-        <div className="kura_tm_portfolio">
+      <div className="chantha_tm_section" id="portfolio">
+        <div className="chantha_tm_portfolio">
           <div className="container">
-            <div className="kura_tm_main_title">
+            <div className="chantha_tm_main_title">
               <span>Portfolio</span>
-              <h3>Selected Works</h3>
+              <h3>Design Works</h3>
             </div>
             <div
               className="portfolio_list gallery_zoom wow fadeInUp"
@@ -82,27 +64,13 @@ const Portfolio = () => {
                                 backgroundImage: "url(" + image.src + ")",
                               }}
                             ></div>
-                            <div className="overlay"></div>
-                            <img
-                              className="svg"
-                              src="/img/svg/right-arrow.svg"
-                              alt=""
-                            />
-                            <div className="details">
-                              <h3>{image.title}</h3>
-                              <span>{image.sub}</span>
-                            </div>
                           </div>
-                          <a
-                            className="kura_tm_full_link popup-vimeo"
-                            // onClick={() => showLightBox(index)}
-                          ></a>
                         </div>
                       </SwiperSlide>
                     ))}
                   </Swiper>
                 </div>
-                <div className="kura_tm_swiper_progress fill">
+                <div className="chantha_tm_swiper_progress fill">
                   <div className="my_pagination_in"></div>
                   <div className="my_navigation">
                     <ul>
@@ -132,16 +100,6 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      {showLight ? (
-        <LightBox
-          images={IMAGES.map((img) => ({
-            url: img.src,
-            title: img.caption,
-          }))}
-          startIndex={showLight.startIndex}
-          // onClose={hideLightBox}
-        />
-      ) : null}
     </Fragment>
   );
 };

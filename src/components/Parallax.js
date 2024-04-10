@@ -1,16 +1,29 @@
+import { useEffect } from "react";
 import { jarallax, jarallaxVideo } from "jarallax";
 import "jarallax/dist/jarallax.css";
-import { useEffect } from "react";
-
-// import "./styles.css";
 
 export default function Parallax() {
   useEffect(() => {
     jarallaxVideo();
     jarallax(document.querySelectorAll(".jarallax"), {
       speed: 0.2,
-      videoSrc: "https://www.youtube.com/watch?v=7e90gBu4pas",
     });
-  });
-  return <div className="jarallax" />;
+  }, []);
+
+  return (
+    <div data-jarallax>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{ width: "100%",height: "700px" }}
+      >
+        <source
+          src="/img/video/video.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+  );
 }

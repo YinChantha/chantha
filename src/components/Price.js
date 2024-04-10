@@ -2,19 +2,19 @@ import React from "react";
 
 const Price = () => {
   return (
-    <div className="kura_tm_section" id="price">
-      <div className="kura_tm_pricing">
+    <div className="chantha_tm_section" id="price">
+      <div className="chantha_tm_pricing">
         <div className="container">
           <div className="pricing_inner">
             <div className="left">
-              <div className="kura_tm_sticky_section">
-                <div className="kura_tm_main_title">
+              <div className="chantha_tm_sticky_section">
+                <div className="chantha_tm_main_title">
                   <span>Pricing</span>
                   <h3>Service Prices</h3>
                 </div>
                 <div className="text">
                   <p>
-                    For more than 20 years our experts have been accomplishing
+                    For more than 3 years our experts have been accomplishing
                     enough with modern Web Development, new generation web and
                     app programming language.
                   </p>
@@ -22,7 +22,7 @@ const Price = () => {
               </div>
             </div>
             <div className="right">
-              <div className="kura_tm_sticky_section">
+              <div className="chantha_tm_sticky_section">
                 <ul>
                   <li className="wow fadeInUp" data-wow-duration=".7s">
                     <div className="list_inner">
@@ -30,7 +30,7 @@ const Price = () => {
                         <span>WordPress Development</span>
                       </div>
                       <div className="cost">
-                        <span>$500</span>
+                        <span>Negotiation</span>
                       </div>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -52,10 +52,10 @@ const Price = () => {
                   >
                     <div className="list_inner">
                       <div className="title">
-                        <span>HTML Development</span>
+                        <span>Web & Mobile Development</span>
                       </div>
                       <div className="cost">
-                        <span>$400</span>
+                        <span>Negotiation</span>
                       </div>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@ const Price = () => {
                         <span>Content Writing</span>
                       </div>
                       <div className="cost">
-                        <span>$300</span>
+                        <span>Negotiation</span>
                       </div>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +152,7 @@ const Price = () => {
                         <span>Brand Identity</span>
                       </div>
                       <div className="cost">
-                        <span>$200</span>
+                        <span>Negotiation</span>
                       </div>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -221,10 +221,10 @@ const Price = () => {
                   >
                     <div className="list_inner">
                       <div className="title">
-                        <span>PSD Design</span>
+                        <span>UI&UX Design</span>
                       </div>
                       <div className="cost">
-                        <span>$100</span>
+                        <span>Negotiation</span>
                       </div>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
