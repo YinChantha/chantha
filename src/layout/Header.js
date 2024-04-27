@@ -96,7 +96,7 @@ const Header = ({ dark }) => {
         </div>
         <div className={isToggled ? "dropdown active" : "dropdown"}>
           <div className="dropdown_inner">
-            <ul className="anchor_nav">
+            <ul className="anchor_nav" id="anchor_nav">
               <li className="current">
                 <a href="#home" onClick={toggleTrueFalse}>Home</a>
               </li>
