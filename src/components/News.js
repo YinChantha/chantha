@@ -41,7 +41,7 @@ const News = () => {
                             className="main"
                             style={{
                               backgroundImage:
-                                "url(/img/news/immigration_po.png)",
+                                "url(/img/news/HHK_po.png)",
                             }}
                           ></div>
                         </div>
@@ -52,24 +52,26 @@ const News = () => {
                           alt=""
                         />
                         <div className="details">
-                          <span>Nuxtjs, Tailwind, Nodejs, Docker</span>
-                          <h3>Tools: Gitlab, ZOHO, Vscode</h3>
+                          <span>Wordpress</span>
                         </div>
                         <a
                           className="chantha_tm_full_link"
                           onClick={() =>
                             onOpenModal(
-                              `img/news/immigration_ho.png`,
-                              "Web application",
-                              "2023-November-01 - Present",
-                              `<div>Immigration Lamonde is an immigration service for employers that they are having project to create a plateform
-                              collaboration with the Ministry of CANADA that provide the plateform between company and employee to work as the 
-                              immigration people at CANADA</div>`
+                              `img/news/HHK_ho.png`,
+                              "Landing Page",
+                              "2023-July-25 - 2023-August-25",
+                              `<div>  HHK International Co., Ltd is a company that was established as a market expansion 
+                              service provider in Cambodia, particularly in Phnom Penh. The company specialises in
+                               sales & distribution, marketing, and supply-chain solutions.
+                              <a href="https://www.hhkinternational.com.kh/hhkv2/" target="_blank">Demo</a>
+                              </div>`
                             )
                           }
                         ></a>
                       </div>
                     </SwiperSlide>
+
                     <SwiperSlide className="slick-slide">
                       <div className="list_inner">
                         <div className="image">
@@ -107,6 +109,45 @@ const News = () => {
                         ></a>
                       </div>
                     </SwiperSlide>
+
+                    <SwiperSlide className="slick-slide">
+                      <div className="list_inner">
+                        <div className="image">
+                          <img src="/img/portfolio/410-460.jpg" alt="" />
+                          <div
+                            className="main"
+                            style={{
+                              backgroundImage:
+                                "url(/img/news/immigration_po.png)",
+                            }}
+                          ></div>
+                        </div>
+                        <div className="overlay"></div>
+                        <img
+                          className="svg"
+                          src="/img/svg/right-arrow.svg"
+                          alt=""
+                        />
+                        <div className="details">
+                          <span>Nuxtjs, Tailwind, Nodejs, Docker</span>
+                          <h3>Tools: Gitlab, ZOHO, Vscode</h3>
+                        </div>
+                        <a
+                          className="chantha_tm_full_link"
+                          onClick={() =>
+                            onOpenModal(
+                              `img/news/immigration_ho.png`,
+                              "Web application",
+                              "2023-November-01 - Present",
+                              `<div>Immigration Lamonde is an immigration service for employers that they are having project to create a plateform
+                              collaboration with the Ministry of CANADA that provide the plateform between company and employee to work as the 
+                              immigration people at CANADA</div>`
+                            )
+                          }
+                        ></a>
+                      </div>
+                    </SwiperSlide>
+
                     <SwiperSlide className="slick-slide">
                       <div className="list_inner">
                         <div className="image">
@@ -264,6 +305,7 @@ const News = () => {
                         ></a>
                       </div>
                     </SwiperSlide>
+
                     <SwiperSlide className="slick-slide">
                       <div className="list_inner">
                         <div className="image">
