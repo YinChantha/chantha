@@ -40,7 +40,7 @@ const Timeline = () => {
                   <span>Stock Control Management ,Goodhill | Phnom Penh</span>
                 </div>
               </li>
-              <li
+              {/* <li
                 className="wow fadeInUp"
                 data-wow-duration=".7s"
                 data-wow-delay=".4s"
@@ -59,7 +59,7 @@ const Timeline = () => {
                     technology
                   </span>
                 </div>
-              </li>
+              </li> */}
               <li
                 className="wow fadeInUp"
                 data-wow-duration=".7s"

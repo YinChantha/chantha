@@ -344,7 +344,7 @@ const News = () => {
                         ></a>
                       </div>
                     </SwiperSlide>
-                    <SwiperSlide className="slick-slide">
+                    {/* <SwiperSlide className="slick-slide">
                       <div className="list_inner">
                         <div className="image">
                           <img src="/img/portfolio/410-460.jpg" alt="" />
@@ -382,7 +382,7 @@ const News = () => {
                           }
                         ></a>
                       </div>
-                    </SwiperSlide>
+                    </SwiperSlide> */}
                   </Swiper>
                 </div>
 
