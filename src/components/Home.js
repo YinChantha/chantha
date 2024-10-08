@@ -103,7 +103,7 @@ const Home = () => {
                       />
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href="#"
                       onClick={() =>
@@ -121,8 +121,8 @@ const Home = () => {
                         alt=""
                       />
                     </a>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <a
                       href="#"
                       onClick={() =>
@@ -140,7 +140,7 @@ const Home = () => {
                         alt=""
                       />
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="short_info">
